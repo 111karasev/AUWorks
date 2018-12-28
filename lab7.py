@@ -20,13 +20,15 @@ def isNumberPrime(a):
 
 def str_base(number, base):
     nums=[]
-    while number!=0:
+    while True:
         mod=number%base
         if(mod>=10):
             nums.append(chr(ord('A')+mod-10))
         else:
-            nums.append(mod)
+            nums.append(str(mod))
         number=number//base
+        if number == 0:
+            break
     nums.reverse()
     return ''.join(nums)
 
