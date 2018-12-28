@@ -34,4 +34,4 @@ def evk_up(a, b):
     if a==0:
         return (b, 0, 1)
     evk, x, y=evk_up(b%a, a)
-    return (evk, y-(b//a)*x, x)
+    return (evk, y-b//a*x, x)
