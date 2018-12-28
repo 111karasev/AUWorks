@@ -1,17 +1,19 @@
 import numpy as np
 import math
 def evk(a, b):
-    if(b==0):
+    if b==0:
         return a
     else:
         return evk(b, a%b)
 
 def isNumberPrime(a):
-    if (a%2==0):
+    if a%2==0:
+        if a == 2:
+            return True
         return False
     i=3
     while i*i<a:
-        if(a%i==0):
+        if a%i==0:
             return False
         i+=2
     return True
