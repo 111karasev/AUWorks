@@ -1,0 +1,12 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<p>GCD = {{name}}!</p>
+
+<form action="/" method="GET">
+  <input type="number" name="a" />
+  <input type="number" name="b" />
+  <input type="submit" value="Get!">
+</form>
+
+{% endblock %}
